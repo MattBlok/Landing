@@ -219,7 +219,7 @@ h3 {
 
 .Quote {
 	text-align: left;
-	font-family: Cardina-Bold;
+	font-family: Cardinal-Bold;
 	font-size: clamp(3rem, 2vw + 1rem, 6rem);
 	line-height: auto;
 	max-width: 80%;
