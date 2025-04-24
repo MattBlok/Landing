@@ -1,0 +1,252 @@
+body, html {
+	margin: 0px;
+	padding: 0px;
+	 -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.Cover > img {
+	width: 100%;
+}
+
+@font-face {
+  font-family: "LyonText";
+  src:
+    url("../assets/fonts/LyonText-Regular.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "LyonTextItalic";
+  src:
+    url("../assets/fonts/LyonText-RegularItalic.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Cardinal";
+  src:
+    url("../assets/fonts/CardinalPhoto-Regular.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Cardinal-Bold";
+  src:
+    url("../assets/fonts/CardinalPhoto-Bold.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Barlow";
+  src:
+    url("../assets/fonts/Barlow-Bold.ttf") format("opentype"),
+}
+
+
+.Wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 120px;
+  	padding-right: 120px;
+}
+
+@media (max-width: 900px) {
+	.Wrapper {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+}
+
+@media (max-width: 600px) {
+	.Wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+
+
+h2 {
+	font-family: "Cardinal";
+	font-size: clamp(3rem, 2vw + 0.5rem, 6rem);
+	line-height: auto;
+	font-weight: 100;
+	text-align: center;
+	margin: 0px;
+	padding: 100px 0px;
+}
+
+@media (max-width: 900px) {
+	h2 {
+		font-size: clamp(2rem, 2vw + 0.5rem, 3rem);
+	}
+}
+
+@media (max-width: 600px) {
+	h2 {
+		font-size: 28px;
+		line-height: 40px;
+		text-align: left;
+		padding: 50px 0px;
+	}
+}
+
+
+
+
+p {
+	font-family: "LyonText";
+	font-size: clamp(1rem, 2vw + 0.5rem, 2rem);
+	line-height: 52px;
+	font-weight: 100;
+}
+
+@media (max-width: 900px) {
+	p {
+		line-height: auto !important;
+	}
+}
+
+
+@media (max-width: 600px) {
+	p {
+		font-size: 18px;
+		line-height: 32px;
+		text-align: left;
+	}
+}
+
+
+
+h3 {
+	font-family: "Barlow";
+	font-size: 32px;
+	line-height: 60px;
+	margin: 0px;
+	padding: 0px;
+}
+
+@media (max-width: 600px) {
+	h3 {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+}
+
+
+.H3Paragraphe {
+	margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+	.H3Paragraphe {
+		margin-bottom: 32px;
+	}
+}
+
+.H3Paragraphe > p {
+	margin-top: 0px;
+}
+
+.H3Paragraphe > p:nth-of-type(1) {
+	margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+	.H3Paragraphe > p:nth-of-type(1) {
+	margin-bottom: 20px;
+}
+}
+
+.Lettrine::first-letter {
+	font-size: 150px;
+	font-family: Cardina-Bold;
+	font-style: italic;
+}
+
+@media (max-width: 600px) {
+	.Lettrine::first-letter {
+		font-size: 72px;
+	}
+}
+
+.Italic {
+	font-family: LyonTextItalic;
+	font-style: italic;
+	letter-spacing: 0,5px;
+}
+
+.Portrait {
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.Portrait-2 {
+	width: 100%;
+	padding: 20px 0px;
+}
+
+@media (max-width: 600px) {
+	.Portrait {
+		padding: 32px 0px;
+	}
+}
+
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+	.video-wrapper {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+}
+
+
+.Quote {
+	text-align: left;
+	font-family: Cardina-Bold;
+	font-size: clamp(3rem, 2vw + 1rem, 6rem);
+	line-height: auto;
+	max-width: 80%;
+}
+
+@media (max-width: 1300px) {
+	.Quote {
+	max-width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+	.Quote {
+		font-size: 28px;
+		line-height: 40px;
+		text-align: left;
+		padding: 50px 0px;
+	}
+}
+
+
+br {
+	display: block;
+}
+
+@media (max-width: 1300px) {
+	br {
+	display: none;
+}
+}
